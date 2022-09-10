@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&family=Inter:wght@200&family=Josefin+Sans:wght@300&family=Josefin+Slab:ital,wght@0,500;1,600&family=Mouse+Memoirs&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&family=Inter:wght@200&family=Josefin+Sans:wght@300&family=Josefin+Slab:ital,wght@0,500;1,600&family=Mouse+Memoirs&family=Ms+Madi&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@300&family=Dancing+Script:wght@700&family=Inter:wght@200&family=Josefin+Sans:wght@300&family=Josefin+Slab:ital,wght@0,500;1,600&family=Mouse+Memoirs&family=Ms+Madi&display=swap');
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    /*font-family: 'DM Mono', monospace;*/
+    /*font-family: 'Inter', sans-serif;*/
+    /*font-family: 'Josefin Sans', sans-serif;*/
+    /*font-family: 'Josefin Slab', serif;*/
+    /*font-family: 'Mouse Memoirs', sans-serif;*/
+    /*font-family: 'DM Mono', monospace;*/
+    /*font-family: 'Inter', sans-serif;*/
+    /*font-family: 'Josefin Sans', sans-serif;*/
+    /*font-family: 'Josefin Slab', serif;*/
+    /*font-family: 'Mouse Memoirs', sans-serif;*/
+    /*font-family: 'Ms Madi', cursive;*/
+    font-family: 'Dancing Script', cursive;
+    font-family: 'DM Mono', monospace;
+    font-family: 'Inter', sans-serif;
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Josefin Slab', serif;
+    font-family: 'Mouse Memoirs', sans-serif;
+    font-family: 'Ms Madi', cursive;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #333;
+    overflow: hidden;
+    text-align: center;
+}
+h1{
+letter-spacing: 8px;
+    font-size: 6em;
+    ;
+    color: white;
+    z-index: 2;
+}
+span{
+    position: absolute;
+    pointer-events: none;
+    filter:drop-shadow(0 0 15px rgba(0,0,0,.5));
+    animation: animateSpan 1s linear infinite;
+}
+@keyframes animateSpan {
+    0%,100%{
+        opacity: 0;
+    }
+    20%,80%{
+        opacity: 1;
+    }
+}
+span:before{
+    content:'';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url("./images/heart.png");
+    background-size: cover;
+    animation: animate 1s linear infinite;
+    z-index: 1;
+}
+@keyframes animate {
+    0%{
+        transform: translate(0) rotate(0);
+    }
+    100%{
+        transform:translate(300px) rotate(360deg) ;
+    }
+}
+.letter{
+    transition: .2s ease-in-out;
+    transition-delay: .01s;
+    margin: 0 5px;
+}
+.letter:hover{
+    color: rgba(245, 0, 0, 0.82);
+}
