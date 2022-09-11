@@ -40,6 +40,8 @@ letter-spacing: 8px;
     color: white;
     z-index: 2;
 }
+h1:hover{
+    color:#ff2d61;
 span{
     position: absolute;
     pointer-events: none;
