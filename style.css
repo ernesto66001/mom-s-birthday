@@ -78,7 +78,7 @@ span:before{
     margin: 0 5px;
 }
 .letter:hover{
-    color: #ff2d61;
+    color: #ff2d61 !importnat;
 }
 @media (max-width: 550px) {
     h1{
