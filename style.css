@@ -40,8 +40,7 @@ letter-spacing: 8px;
     color: white;
     z-index: 2;
 }
-h1:hover{
-    color:#ff2d61;
+
 span{
     position: absolute;
     pointer-events: none;
@@ -81,7 +80,7 @@ span:before{
 }
 .letter:hover{
     color: #ff2d61 ;
-    cursor:pointer;
+    
 }
 @media (max-width: 550px) {
     h1{
