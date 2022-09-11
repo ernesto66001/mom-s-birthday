@@ -40,6 +40,7 @@ letter-spacing: 8px;
     color: white;
     z-index: 2;
 }
+
 span{
     position: absolute;
     pointer-events: none;
@@ -78,7 +79,8 @@ span:before{
     margin: 0 5px;
 }
 .letter:hover{
-    color: #ff2d61;
+    color: #ff2d61 ;
+    
 }
 @media (max-width: 550px) {
     h1{
