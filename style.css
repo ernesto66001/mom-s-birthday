@@ -85,6 +85,9 @@ span:before{
 @media (max-width: 600px) {
     h1{
         font-size: 2vw;
-
+letter-spacing: 0;
+    }
+    .letter{
+        margin: 0;
     }
 }
