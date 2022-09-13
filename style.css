@@ -82,8 +82,9 @@ span:before{
     color: #ff2d61 ;
     
 }
-@media (max-width: 550px) {
+@media (max-width: 600px) {
     h1{
-        font-size: 1vw;
+        font-size: 2vw;
+
     }
 }
